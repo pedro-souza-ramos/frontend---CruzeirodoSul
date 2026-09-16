@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario do Estudante</title>
+    <style>
+    body{
+    background-color: rgb(229, 233, 230);
+    font-size: medium;
+    border-radius: 20px;
+    text-align: center;
+    }
+    button{
+    padding: 1em 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+                
+    button:hover {
+    background-color: #0b0c0c;
+    box-shadow: 0px 15px 20px rgba(0, 1, 1, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+     }
+
+    button:active {
+    transform: translateY(-1px);
+    }
+    
+    </style>
+</head>
+
+<body>
+    <h1>Formulario do Estudandte</h1>
+
+    <form>
+        <p>
+            <label class="nome" for="nome">Nome: </label>
+            <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+        </p>
+        <p>
+            <label class="email" for="email">email: </label>
+            <input type="email" placeholder="Digite seu email" id="email" name="email" required>
+        </p>
+        <p>
+            <label class="senha" for="senha">senha: </label>
+            <input type="password" placeholder="Digite a senha" id="senha" name="senha" required>
+        </p>
+
+    
+        <div>
+            <button class="button" for="enviar">Enviar</button>
+            <button class="button" for="limpar">Limpar</button>
+        </div>
+
+
+
+
+    </form>
+</body>
+</html>
